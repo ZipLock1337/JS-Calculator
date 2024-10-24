@@ -1,0 +1,145 @@
+/* General style */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: linear-gradient(45deg, #adff2f, #00ffff);
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Calculate box */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculate_box {
+    width: 540px;
+    height: 570px;
+
+    border-radius: 15px;
+    background-color: #283440;
+    box-shadow: -10px 15px 15px rgba(0, 0, 0, 0.699);
+}
+
+.input_box {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.input_value {
+    width: 400px;
+    height: 50px;
+
+    font-size: 25px;
+    border: none;
+    border-radius: 15px;
+    padding-left: 15px;
+    color: green;
+    background: #000000;
+}
+
+.input_value::placeholder {
+    font-size: 25px;
+    color: green;
+    opacity: 0.8;
+}
+
+/* btn style */
+
+.btn_box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    padding-top: 25px;
+}
+
+.btn_box:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100px;
+    height: 50px;
+
+    border: none;
+    border-radius: 8px;
+    font-size: 25px;
+    background-color: #000000;
+    color: green;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.btn:active {
+    box-shadow: 4px 6px 6px rgba(0, 0, 0, 1);
+}
+
+/* styles for big btn */
+
+.num {
+    padding-right: 127px;
+}
+
+.plus {
+    position: absolute;
+    right: 25px;
+    top: 24px;
+    height: 137px;
+}
+
+.enter {
+    position: absolute;
+    right: 25px;
+    top: 24px;
+    height: 137px;
+}
+
+.zero {
+    width: 165px;
+}
+
+.del {
+    width: 165px;
+}
